@@ -60,7 +60,7 @@ app.post('/api/export', async (req, res) => {
   }
 });
 
-app.post('/api/test', (req, res) => {
+app.all('/api/test', (req, res) => {
   res.json({ message: 'ClipWizardPro backend is working!' });
 });
 
